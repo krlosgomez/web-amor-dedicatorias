@@ -1,6 +1,13 @@
+:root {
+  --bg-primary: rgb(206 89 55 / 59%);
+  --color-primary: rgb(206 89 55 / 100%);
+}
+html {
+  background-color: #fcd1c6;
+}
 body {
   background-image: linear-gradient(to right top, #ffac98, #ffb5a3, #febfaf, #fdc8ba, #fcd1c6);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .title {
@@ -9,4 +16,16 @@ body {
   /* text-shadow: 0px 6px 2px rgb(206 89 55 / 59%); */
   text-shadow: 0px 4px 2px rgb(206 89 55 / 59%);
   text-transform: uppercase;
+}
+
+.--bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--bg-primary);
+}
+.nav-link {
+  color: var(--color-primary);
 }
